@@ -1,0 +1,131 @@
+:root
+  --margin-1: 40rem
+  --margin-2: 60rem
+  --margin-3: 108rem
+  --margin-4: 158rem
+  --margin-5: 238rem
+  +pc-sm-view
+    --margin-1: 8rem
+    --margin-2: 14rem
+    --margin-3: 28rem
+    --margin-4: 42rem
+
+html
+  min-height: 100%
+  font-feature-settings: "palt" 1
+  font-size: calc(100 / var(--base-vw) * 1 * 1vw)
+  --max-width: 1580px
+  +pc-sm-view-over
+    --base-vw: 1440
+  +sp-view
+    --base-vw: 390
+
+html,body
+  max-width: 100vw
+  color: var(--color-black-100)
+  ::selection
+    background: var(--select-fill-color)
+    color: var(--select-text-color)
+  ::-moz-selection
+    background: var(--select-fill-color)
+    color: var(--select-text-color)
+
+body
+  color: var(--color-black-100)
+  font-family: $family
+
+span, div
+  +text-inherit
+
+img
+  object-fit: cover
+  pointer-events: none
+  touch-callout: none
+  user-select: none
+  user-drag: none
+  border-radius: inherit
+  width: inherit
+  height: inherit
+
+svg
+  width: inherit
+  height: inherit
+  // pointer-events: none
+  // touch-callout: none
+  // user-select: none
+  // user-drag: none
+
+video
+  max-width: 100vw
+  ovject-fit: cover
+
+picture
+  display: block
+  source,img
+    width: 100%
+    height: 100%
+
+p,a,b,h1,h2,h3,h4,div
+  font-size: 14rem
+
+a
+  cursor: pointer
+  line-height: 1
+  display: inline-block
+  & > *
+    pointer-events: none
+
+button
+  position: relative
+  width: fit-content
+  &::after
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: calc(100% + 22px)
+    width: calc(100% + 22px)
+
+section
+  width: 100vw
+
+.container
+  min-height: 100vh
+  position: relative
+  max-width: 100vw
+  overflow-x: hidden
+  background: var(--color-cream-100)
+
+[hidden]
+  display: none !important
+
+body[no-scroll]
+  overflow: hidden
+  overscroll-behavior: none
+
+[pc-only]
+  +sp-view
+    display: none !important
+[pc-sm-only]
+  +pc-sm-view-over
+    display: none !important
+[lg-over-only]
+  +pc-lg-view
+    display: none !important
+[sp-only]
+  +sp-view-over
+    display: none !important
+
+.gs-dev-tools
+  z-index: 9999
+  svg
+    pointer-events: auto
+
+html[low-battery]
+  [low-battery-hide]
+    display: none !important
+
+html:not([low-battery])
+  [low-battery-show]
+    display: none !important

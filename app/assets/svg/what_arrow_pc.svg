@@ -1,0 +1,15 @@
+<svg width="608" height="220" fill="none" viewBox="0 0 608 220">
+  <g clip-path="url(#a)">
+    <path stroke="#707070" stroke-dasharray="2 2" d="M606.535 0v50.844H304v30.539"/>
+    <path stroke="#927460" stroke-dasharray="2 2" d="M287.207 93.498 83 219.799M321.024 93.498l204.207 126.301"/>
+    <path fill="#F4F2F0" d="m185.459 142 12.5 21.65-14.723 8.5-12.5-21.65z"/>
+    <path stroke="#927460" stroke-width="2.001" d="m184.263 151.928-1.886 7.043 7.041 1.887"/>
+    <path fill="#F4F2F0" d="m408.735 163.65 12.5-21.65 14.723 8.5-12.5 21.65z"/>
+    <path stroke="#927460" stroke-width="2.001" d="m417.933 159.723 7.042-1.889-1.887-7.041"/>
+  </g>
+  <defs>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h608v220H0z"/>
+    </clipPath>
+  </defs>
+</svg>

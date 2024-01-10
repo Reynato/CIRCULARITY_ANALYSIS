@@ -1,0 +1,8 @@
+$family: "Yu Gothic Medium", "Yu Gothic", YuGothic,'A+EqpB-游ゴシック体 Pr6N M', selif
+$weightMap: (L: 400,regular: 400,M: 500,medium: 500,B: 600,bold: 700,black: 900)
+
+=text($fs:14rem, $weight:regular,  $fam:$family)
+  font-size: $fs
+  font-family: $fam
+  font-weight: map-get($weightMap, $weight)
+  -webkit-font-smoothing: antialiased
