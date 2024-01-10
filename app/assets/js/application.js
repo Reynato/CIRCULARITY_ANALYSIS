@@ -2,8 +2,8 @@ import { $, lowBattery } from "@:js/plugins/_global.js";
 import Common from "@:js/plugins/_common.js";
 import TopPage from "@:js/pages/_index.js";
 
-import basicAuth from "@:js/plugins/_basicAuth.js";
-basicAuth();
+// import basicAuth from "@:js/plugins/_basicAuth.js";
+// basicAuth();
 
 class App {
   constructor() {
