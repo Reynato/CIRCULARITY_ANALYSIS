@@ -68,6 +68,21 @@ export default class App {
             opacity: 1,
           })
         })
+        
+
+        console.log($(".line-1 path"));
+
+        $(".line-1 path").addEventListener("mouseenter",()=>{
+          gsap.to('.line-2, .line-3',{
+            opacity: 0.1,
+          })
+        })
+
+        $(".line-1 path").addEventListener("mouseleave",()=>{
+          gsap.to('.line-2, .line-3',{
+            opacity: 1,
+          })
+        })
       }, 400);
       
     })
